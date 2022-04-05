@@ -1,0 +1,30 @@
+import Vue from 'vue';
+import { FromTo, MomentDiv } from "../../../util/TimeSlotUtils";
+export default class CTimeSlotTouch extends Vue {
+    readonly height: number;
+    readonly marginTop: number;
+    errorValidation: boolean;
+    errorValidationTime: boolean;
+    errorValidationMeeting: boolean;
+    strings: any;
+    dialog: boolean;
+    sortedTimeSlots: Array<any>;
+    editFrom: string;
+    editTo: string;
+    momentDiv: MomentDiv;
+    fromTo: FromTo;
+    color: string;
+    darkening: boolean;
+    availableTimeslots: FromTo[];
+    slotIndex: number;
+    zIndexTouch: number;
+    newTimeSlot: FromTo;
+    editingDate: string;
+    timeslot_min_duration: string;
+    colorFreeTimeSlots: string;
+    __watchDialog(): void;
+    correctSortedTimeSlots(): void;
+    setTimeSlot(): void;
+    touching(): void;
+    __resetZIndex(): void;
+}

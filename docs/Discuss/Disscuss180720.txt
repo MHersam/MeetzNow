@@ -1,0 +1,9 @@
+welche Zeitschritte bieten wir an? (15,30,60 und mehr?)
+=>15,30,60
+
+Führende nullen bei zeitangabe (08:15 oder 8:15)
+=> mit führenden nullen
+
+Webapp genereller Footer für jede Seite?
+signup:
+welche daten sollten wir da noch vom nutzer nehmen? Nur Email und Passwort? Oder auch einen Benutzernamen/richtiger Namen oder den nur optional?

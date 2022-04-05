@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="VSTOPrototyp.UI.UserControls.TabContoller"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:VSTOPrototyp.UI.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Height="32" VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="1" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Übersicht" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                    Background="#00DDDDDD" FontSize="20" BorderBrush="#00707070" Click="Übersicht_Click" />
+            <Rectangle x:Name="ActiveTabDisplay" Grid.Column="0" Fill="#FF01C5FF"
+                       VerticalAlignment="Bottom" Height="2" />
+            <Rectangle Grid.Column="1" Fill="#FF01C5FF" />
+            <Button Content="Umfrage erstellen" Grid.Column="2" HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch" Background="#00DDDDDD" FontSize="20" BorderBrush="#00707070"
+                    Click="Erstellen_Click" />
+        </Grid>
+        <StackPanel x:Name="MainContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" />
+    </Grid>
+</UserControl>

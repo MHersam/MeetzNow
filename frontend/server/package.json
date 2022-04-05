@@ -1,0 +1,13 @@
+{
+  "name": "meetznow-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-subdomain": "^1.0.5",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,45 @@
+//UI
+Termindauer -> Terminmindestdauer
+Teilnehmer übersicht
+Passwort Textbox
+Checkboxen für öffentliche Umfrage (Teilnehmer sehen Teilnehmer und Ergebnis?) fehlen
+
+Angabe einer Rückfrage Email?
+==> Machen wir nicht, weil es durch KommentarFunktion übernommen wird
+
+Geburtstag, school(=education?), Gender Attribute in User schema , wofür brauchen wir das?
+==> NOPE wollen wir net
+
+Farben (Was änderbar, wie hängen sie mit themes zusammen)?
+==> nur Hintergrund/Logo/Balken .... 
+
+Leere Kalendardaten/-spalten mit anzeigen?
+==> nur user dates anzeigen
+
+Fixe Kalendar einstellungen?
+==> JO
+
+//Outlook
+Link seite für Outlook zum öffnen von Umfragen
+Outlook teilnahme timeslots invertieren oder überlappen
+
+
+//generelle Fragen
+Umfrage mit mehreren Admins?
+==> NEIN
+
+Gastbehandlung (was in den cookie, wie lange ,... ) -> Schema?
+==> nur umfrageid/userid/token bis kurz nach umfrageende
+
+Salted Hashing/Passwort security, Verantworlicher der sich im Sprint damit beschäftigt.
+==> Backend user service dude
+
+Welche daten stehen beim Google/Facebook/... Login zur Verfügung, bzw welche brauchen wir?.
+==> AuthCode ? Email, Name
+
+Wie behandeln das ändern einer Umfrage während jemand grade teilnehmt.
+==> Edit -> Event -> Reload (cache reload)
+
+User attribute isGuest.
+Country attribute in welchem Format? ==> NOPE
+laufende documentation ==> WICHTIG! 

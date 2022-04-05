@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Meetznow</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/navbar.js"></script>
+	</head>
+	<body>
+	<div class="navigation" id="topnav">
+		<div class="wrapper">
+			<ul>
+				<li><a href="#top" class="toggle">Meetz!</a></li>
+				<li><a href="#features" class="toggle">Features</a></li>
+				<li><a href="#about" class="toggle">Über uns</a></li>
+				<li><a href="/docs/#/de-de/">Dokumentation</a></li>
+				<li style="float:right"><a class="active" href="/app">Webapp</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">Sprache
+						<i class="arrow_down"></i>
+					</button>
+					<div class="dropdown-content">
+						<div onclick="myhref('/');" class="frame">
+							<span class="helper"></span>
+							<img src="img/ger_flag.png" height=20 width=30/>
+							<a>Deutsch</a>
+						</div>
+						<div onclick="myhref('/en');" class=frame>
+							<span class="helper"></span>
+							<img src="img/uk_flag.png" height=20 width=30/>
+							<a>English</a>
+						</div>
+					</div>
+				</div> 				
+				<a href="javascript:void(0);" class="icon" onclick="navToggle()"><img src="img/burger_icon.png" width="30px" height="30px"></a>
+			</ul>
+		</div>
+	</div>
+	<a name="top">
+	<div class="banner">
+		
+	</div>
+	<div class="wrapper">
+		<div class="description">
+			<h1> Meetznow ist ein kostenloser, Open-Source Terminplanungsassistent</h1>
+			<p>Finden Sie mühelos einen optimalen Zeitraum für Ihr nächstes Treffen, indem Sie Terminumfragen erstellen und andere daran teilnehmen lassen. Hierzu können Sie unsere Webapp direkt in Ihrem Webbrowser öffnen oder auch unser Outlook Plugin für eine nahtlose Integration von Meetznow in Microsoft Outlook verwenden. Selbstverständlich ist Meetznow auch auf mobile Geräte ausgelegt.</p>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="links">
+			<a href="/app" class="active link outlined filled">Webapp öffnen</a>
+			<a href="res/MeetzNowOffice0.1.0.0.zip" download class="outlined link unfilled">Plugin herunterladen</a>
+		</div>
+	</div>
+	<a name="features">
+	<div class="feature-section">
+		<div class="feature wrapper">
+			<span class="feature-image"><img src="img/group.png" class="square-image" height="250" width="250"></span>
+			<span class="feature-text">
+				<span>
+					<h3>Je mehr Personen an einem Treffen teilnehmen sollen, desto schwieriger ist es einen passenden Termin zu finden</h3>
+					Dieser Problematik nehmen wir uns an und machen den nervenaufreibenden Terminfindungsprozess kinderleicht. Erstellen Sie einfach eine Umfrage, geben sie Daten, wie Start- und Endzeitpunkt sowie den Ort der Veranstaltung, an und teilen sie dann dem Umfragelink mit allen Teilnehmern.
+				</span>
+			</span>
+		</div>
+		<div class="feature wrapper">
+			<span class="feature-image"><img src="img/time_distribution.png" class="wide-image" height="253" width="400"></span>
+			<span class="feature-text">
+				<span>
+					<h3>Immer den besten Zeitraum für alle Teilnehmer finden</h3>
+					Ist der Abstimmungszeitraum abgelaufen, ermitteln wir den optimalen Zeitslot für Ihren Termin.
+				</span>
+			</span>
+		</div>
+		<div class="feature wrapper">
+			<span class="feature-image"><img src="img/calendar.png" class="square-image" height="250" width="250"></span>
+			<span class="feature-text">
+				<span>
+					<h3>Binden Sie Ihren Kalender ein und filtern Sie belegte Zeitslots aus</h3>
+					Nehmen Sie an einer Umfrage teil, haben Sie die Möglichkeit ihren persönlichen Terminkalender einzubinden, um Zeiträume, an denen Sie einen anderen Termin haben, automatisch zu blockieren. Dabei gehen wir natürlich mit Diskretion vor und verwenden, sowie speichern, nur die Information über freie Zeiträume aus Ihrem Kalender.
+				</span>
+			</span>
+		</div>
+		<div class="feature wrapper">
+			<span class="feature-image"><img src="img/avatar.png" class="square-image" height="250" width="250"></span>
+			<span class="feature-text">
+				<span>
+					<h3>Unsere Webapp ist völlig ohne Anmeldung verwendbar</h3>
+					Sie können optional ein Konto erstellen, oder sich mit Ihrem existierenden Google, Twitter oder Facebook Konto bei uns anmelden. Angemeldet behalten Sie immer alle Umfragen im Auge, welche Sie erstellt oder an denen Sie teilgenommen haben.
+				</span>
+			</span>
+		</div>
+		<div class="feature wrapper">
+			<span class="feature-image"><img src="img/route.png" class="square-image" height="250" width="250"></span>
+			<span class="feature-text">
+				<span>
+					<h3>Die persönliche An- und Abreisezeit jedes Teilnehmers wird berücksichtigt</h3>
+					Angenommen ein Teilnehmer muss für den Termin erst in eine andere Stadt reisen, dann wird es wahrscheinlich nicht genügen, wenn dieser in seinem persönlichen Terminkalender einen zweistündigen Zeitslot frei hat. Daher bieten wir die Möglichkeit die An- und Abreisezeit bei der Terminfindung mit zu beachten.
+				</span>
+			</span>
+		</div>
+		<div class="spacer"></div>
+	</div>
+	<a name="about"></a>
+	<div class="wrapper">
+		<div class="description">
+			<h2>Über uns</h2>
+			<p>Meetznow ist als Studienprojekt von Studentinnen und Studenten der Softwaretechnik und der Medieninformatik an der Universität Stuttgart entstanden. Unser Ziel war es, einen neuartigen Terminplanungsassistenten für die vereinfachte Organisation von Terminen zu entwickeln. Kern von Meetznow ist es, die Terminplanung auch für 10 oder mehr Parteien zu vereinfachen, wofür andere Werkzeuge wie Doodle oder Foodle nicht ausgelegt sind. Umgesetzt wurde das Projekt im Sommersemester 2018 am Institut für Steuerungstechnik der Werkzeugmaschinen und Fertigungseinrichtungen (ISW).</p>
+		</div>
+		<div class="about">
+			<a href="https://www.uni-stuttgart.de" target="_blank"><img src="img/uni-stuttgart-logo.svg" class="about-img" height="67.5" width="300"></a>
+			<a href="https://www.isw.uni-stuttgart.de" target="_blank"><img src="img/isw-logo.png" class="about-img" height="92.67" width="200"></a>
+		</div>
+	</div>
+</body>
+

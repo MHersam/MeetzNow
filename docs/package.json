@@ -1,0 +1,16 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.isw.uni-stuttgart.de:projekte/eigenentwicklungen/StuPro_Terminplaner/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

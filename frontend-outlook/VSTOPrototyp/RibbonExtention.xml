@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabCalendar">
+        <group id="fats"
+               label="Find a timeslot">
+          <button id="Bt_Fats" size="normal" label="Let's fats!" enabled="true" onAction="OnFats" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

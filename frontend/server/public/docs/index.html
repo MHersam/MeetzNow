@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meetznow docs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="docs">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="/docs/css/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+	  alias: {
+		'/en/(.*)_sidebar.md': '/_sidebar.md',
+		'/en/(.*)_navbar.md': '/_navbar.md',
+		'/de-de/(.*)_sidebar.md': '/de-de/_sidebar.md',
+		'/de-de/(.*)_navbar.md': '/de-de/_navbar.md'
+      },
+	  auto2top: true,
+      name: 'Meetznow docs',
+	  basePath: '/docs/',
+	  themeColor: '#2196F3',
+	  search: 'auto',
+      repo: 'git@git.isw.uni-stuttgart.de:projekte/eigenentwicklungen/StuPro_Terminplaner/docs',
+	  loadSidebar: true,
+	  loadNavbar: true,
+	  mergeNavbar: true,
+	  autoHeader: true,
+	  subMaxLevel: 3
+	}
+  </script>
+  <script src="/docs/js/docsify.min.js"></script>
+  <script src="/docs/js/search.min.js"></script>
+  <script src="/docs/js/zoom-image.min.js"></script>
+  <script src="/docs/js/docsify-copy-code.min.js"></script>
+</body>
+</html>

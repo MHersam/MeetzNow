@@ -1,0 +1,33 @@
+Registration: name, surname pflicht? unternehmen, hintergrundbild, profilbild und so??
+=> username email, passwort
+
+create_poll: exposing? was kommt da rein? cal_start, cal_end? 
+braucht man das wenn man schon displayed_dates hat? timeslot_min_duration int in minutes? Das gleiche für timesteps? 
+
+braucht man comments beim erstellen? 
+=> nein 
+
+color nur auf eine festlegen?
+=> später
+
+participate_in_poll user_id nur möglich bei eingeloggten usern also vielleicht ganz weglassen und nur über usernamen oder so aggieren.
+=> gastuser haben auch eine id
+
+was ist ein timeslot?
+=> Zeitspanne 
+
+was ist eine Poll? 
+=> s. datascheme
+
+was sind Comments? 
+=> s. datascheme
+
+
+Change_comment: comment is not a string :) sollte vielleicht update_comment heißen
+=> fixed
+
+create_comment fehlt ganz.
+=> change comment works for adding and changing
+
+statt change_password, change_logo, change_background_image, change_email, change_username ein bc mit update_account_details
+=> später mit accountmanagement
